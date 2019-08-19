@@ -1,0 +1,19 @@
+---
+title: "Leaflet"
+Date: 19 AUG 2019
+output:
+  html_document: default
+  pdf_document: default
+Author: Nagaraju Pinniboina
+---
+19 AUG 2019
+
+## Developing Data Products
+```{r}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=51.509865,lng = -0.118092, popup = "London")
+my_map
+```
+
